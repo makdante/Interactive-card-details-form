@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="display-details">
+    <div class="card-front shadow">
+      <div class="dp"><svg width="84" height="47" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="23.478" cy="23.5" rx="23.478" ry="23.5" fill="#fff"/><path d="M83.5 23.5c0 5.565-4.507 10.075-10.065 10.075-5.559 0-10.065-4.51-10.065-10.075 0-5.565 4.506-10.075 10.065-10.075 5.558 0 10.065 4.51 10.065 10.075Z" stroke="#fff"/></svg></div>
+      <div class="details">
+        <p class="c-number">0000 0000 0000 0000</p>
+        <p class="name-exp">
+          <span id="c-name">Jane Appleseed</span>
+          <span id="c-expiry"><span id="exp-mm">00</span>/<span id="exp-yy">00</span></span>
+        </p>
+      </div>
+    </div>
+    <div class="card-back shadow">
+      <p class="c-cvv">000</p>
+    </div>
+  </div>
+
+  <div class="form-container">
+    <form class="card-form" id="form" action="." >
+     <div class="input-field">
+      <label for="card-name">cardholder name</label>
+      <input type="text" name="card-name" id="card-name" placeholder="e.g. Jane Appleseed">
+     </div>
+
+      <div class="input-field">
+        <label for="card-number">card number</label>
+      <input type="text" name="card-number" id="card-number" placeholder="e.g. 1234 5678 9123 0000" >
+      </div>
+
+      <div class="date-cvv">
+        <div class="input-field " id="exp-container">
+          <label for="exp-date">exp. date (mm/yy)</label>
+          <div class="date-input-container">
+            <input type="text" name="mm" id="mm" maxlength="2" placeholder="MM" >
+            <input type="text" name="yy" id="yy" maxlength="2" placeholder="YY" >
+          </div>
+        </div>
+        <div class="input-field">
+          <label for="cvv">cvv</label>
+          <input type="text" name="cvv" id="cvv" maxlength="3" placeholder="e.g. 123">
+        </div>
+      </div>
+      
+      <input type="submit" value="Confirm" id="form-submit">
+    </form>
+  </div>
+
+  <div class="complete-pg-wrapper hidden ">
+    <div class="complete-pg ">
+      <svg width="80" height="80" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="url(#a)"/><path d="M28 39.92 36.08 48l16-16" stroke="#fff" stroke-width="3"/><defs><linearGradient id="a" x1="-23.014" y1="11.507" x2="0" y2="91.507" gradientUnits="userSpaceOnUse"><stop stop-color="#6348FE"/><stop offset="1" stop-color="#610595"/></linearGradient></defs></svg>
+      <p class="large-text">Thank you!</p>
+      <p>We've added your card details</p>
+      <button id="complete-continue">Continue</button>
+    </div>
+  </div>
+</div>
+<div class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="https://github.com/anugcodes">Anurag</a>.
+</div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.7/jquery.inputmask.min.js" integrity="sha512-jTgBq4+dMYh73dquskmUFEgMY5mptcbqSw2rmhOZZSJjZbD2wMt0H5nhqWtleVkyBEjmzid5nyERPSNBafG4GQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
