@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [here](https://github.com/anugcodes/Interactive-card-details-form)
-- Live Site URL: [here](https://anugcodes.github.io/Interactive-card-details-form/)
+- Solution URL: [here](https://github.com/makdante/Interactive-card-details-form)
+- Live Site URL: [here](https://makdante.github.io/Interactive-card-details-form/)
 
 ## My process
 
@@ -73,6 +73,6 @@ I used the <strong>JQuery Inputmask</strong> to create the input mask for the in
 ## Author
 
 - Github - [Pratyush Nayak](https://github.com/makdante)
-- Github - [Kushagra shandilya](https://github.com/makdante)
+- Github - [Kushagra shandilya](https://github.com/Kushagrashandilya647)
 
 
