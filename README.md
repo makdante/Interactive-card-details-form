@@ -72,7 +72,7 @@ I used the <strong>JQuery Inputmask</strong> to create the input mask for the in
 
 ## Author
 
-- Frontend Mentor - [@anugcodes](https://www.frontendmentor.io/profile/anugcodes)
-- Github - [@anugcodes](https://github.com/anugcodes)
-- Twitter - [@anuragbswl](https://twitter.com/anuragbswl)
+- Github - [Pratyush Nayak](https://github.com/makdante)
+- Github - [Kushagra shandilya](https://github.com/makdante)
+
 
